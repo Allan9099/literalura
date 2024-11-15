@@ -1,6 +1,6 @@
 # LiterAlura
 
-**LiterAlura** es una aplicación de consola en Java diseñada para gestionar libros y autores utilizando la API de **Gutendex**. Los datos obtenidos se almacenan en una base de datos PostgreSQL configurada en PGadmin4.
+**LiterAlura** es una aplicación de consola en Java diseñada para gestionar datos de libros y autores utilizando la API de **Gutendex**. Los datos obtenidos se almacenan en una base de datos PostgreSQL configurada en PGadmin4.
 
 ## Características principales
 
@@ -23,8 +23,7 @@ Al iniciar el programa, se despliega un menú con las siguientes opciones:
 
 1. **Buscar libro por título**
    - Esta opción permite buscar un libro en **Gutendex** por su título.
-   - Los datos de cada libro encontrado se guardan en la base de datos.
-   - Se almacenan los siguientes datos:
+   - Los datos de cada libro encontrado se guardan en la base de datos, donde se almacenan los siguientes datos:
      - **Libro**: título, autor, idioma y número de descargas.
      - **Autor**: nombre, año de nacimiento, año de muerte.
 
@@ -35,11 +34,11 @@ Al iniciar el programa, se despliega un menú con las siguientes opciones:
    - Lista todos los autores almacenados en la base de datos.
 
 4. **Buscar autores vivos por año**
-   - Permite al usuario ingresar un año específico y muestra los autores que estaban vivos en ese período.
+   - Muestra los autores que estaban vivos en un año específico ingresado por el usuario.
 
 5. **Buscar por idioma**
    - Permite buscar libros almacenados por su idioma.
-   - El usuario puede ingresar un código de idioma (por ejemplo, **ES** para español, **EN** para inglés, etc.) o la palabra **"Idiomas"** para listar todos los idiomas disponibles en sus libros guardados.
+   - El usuario puede ingresar un código de idioma (por ejemplo, **ES** para español, **EN** para inglés, etc.) o la palabra **"Idiomas"** para listar todos los idiomas únicos disponibles de los libros guardados de su base de datos.
    
    - Ejemplo del menú de búsqueda por idioma:
      ```
@@ -63,6 +62,7 @@ Al iniciar el programa, se despliega un menú con las siguientes opciones:
 
      ----------------------------------------------
      ```
+   - Luego de esta lista volverá a aparecer el menú para buscar libros por idioma.
 
 ## Configuración
 
